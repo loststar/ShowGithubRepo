@@ -60,7 +60,7 @@ class ShowGithubRepo_Plugin implements Typecho_Plugin_Interface
      * @return unknown
      */
     public static function footer() {
-        echo '<script src="//cdn.bootcss.com/github-repo-widget/e23d85ab8f/jquery.githubRepoWidget.min.js"></script>';
+        echo '<script src="http://cdn.bootcss.com/github-repo-widget/e23d85ab8f/jquery.githubRepoWidget.min.js"></script>';
         
    }
 
