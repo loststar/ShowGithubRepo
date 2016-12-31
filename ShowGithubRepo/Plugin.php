@@ -4,7 +4,7 @@
  * 
  * @package ShowGithubRepo
  * @author Loststar
- * @version 1.0.0
+ * @version 1.0.1-Alpha
  * @link http://techair.cc
  */
 
