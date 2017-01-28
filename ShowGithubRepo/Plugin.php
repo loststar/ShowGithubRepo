@@ -4,7 +4,7 @@
  * 
  * @package ShowGithubRepo
  * @author Loststar
- * @version 1.0.1-Alpha
+ * @version 1.2.1-Alpha
  * @link http://techair.cc
  */
 
@@ -20,7 +20,7 @@ class ShowGithubRepo_Plugin implements Typecho_Plugin_Interface
     public static function activate()
     {
         Typecho_Plugin::factory('Widget_Abstract_Contents')->contentEx = array('ShowGithubRepo_Plugin', 'parse');
-        Typecho_Plugin::factory('Widget_Archive')->header = array('ShowGithubRepo_Plugin', 'footer');
+        Typecho_Plugin::factory('Widget_Archive')->footer = array('ShowGithubRepo_Plugin', 'footer');
     }
     
     /**
@@ -60,7 +60,7 @@ class ShowGithubRepo_Plugin implements Typecho_Plugin_Interface
      * @return unknown
      */
     public static function footer() {
-        echo '<script src="http://cdn.bootcss.com/github-repo-widget/e23d85ab8f/jquery.githubRepoWidget.min.js"></script>';
+        echo '<script src="http://git.hust.cc/GitHub-Repo-Widget.js/GithubRepoWidget.js"></script>';
         
    }
 
